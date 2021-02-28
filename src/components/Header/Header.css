@@ -1,0 +1,16 @@
+.Header {
+    position: fixed;
+    left: 0; 
+    top: 0;
+    width: 1440px;
+    height: 120px;
+    background-color: #FDFCF3;
+}
+
+.header-relative{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;    
+}

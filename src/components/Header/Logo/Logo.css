@@ -1,0 +1,65 @@
+.Logo {
+  position: absolute;
+  width: 227px;
+  height: 60px;
+  left: 40px;
+  top: 36px;
+}
+
+.logo-content {
+  position: absolute;
+  left: 34.36%;
+  right: 0%;
+  top: 15%;
+  bottom: 15%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #1e2022;
+}
+
+.logo-icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+}
+
+.logo-rectangle {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    #adce74 25%,
+    #fff76a 71.88%,
+    #ffce89 100%
+  );
+  border-radius: 12px;
+}
+
+.trees {
+  position: absolute;
+  left: 21.67%;
+  right: 21.67%;
+  top: 21.67%;
+  bottom: 21.67%;
+
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.trees-img {
+  position: absolute;
+  left: 16.67%;
+  right: 16.67%;
+  top: 8.33%;
+  bottom: 8.33%; 
+}

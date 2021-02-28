@@ -1,0 +1,48 @@
+@media (max-width: 12450px) {
+  .Feed {
+    width: 1440px;
+    background-color: #fdfcf3;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .feed-wrapper {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .feed-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .Feed {
+    width: 1024px;
+    background-color: #fdfcf3;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .feed-wrapper {
+    padding-top: 200px;    
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .feed-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+}

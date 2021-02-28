@@ -1,0 +1,129 @@
+@media (max-width: 12450px) {
+  .ModalContainer {
+    width: 1440px;
+    background: rgba(50, 47, 40, 0.7);
+    padding-top: 60px;
+    padding-bottom: 133px;
+  }
+
+  .modal {
+    background: #ffffff;
+    border-radius: 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .modal-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+  }
+
+  .modal-img {
+    width: 500px;
+    height: 750px;
+    background-image: url(https://images.pexels.com/photos/5103756/pexels-photo-5103756.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    /* background-size:cover; */
+  }
+
+  .modal-descr {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+
+    width: 740px;
+
+    color: #1e2022;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ModalContainer {
+    width: 1024px;
+    background: rgba(50, 47, 40, 0.7);
+    padding-top: 222px;
+    padding-bottom: 220px;
+  }
+
+  .modal {
+    background: #ffffff;
+    border-radius: 12px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .modal-flex {
+    display: block;
+  }
+
+  .modal-img {
+    width: 381px;
+    height: 254px;
+    background-image: url(https://images.pexels.com/photos/5103756/pexels-photo-5103756.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    background-size:cover;
+  }
+
+  .modal-descr {
+    padding-top: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* text */
+
+    color: #1e2022;
+  }
+}
+
+.close-group {
+  padding-top: 14px;
+  padding-right: 14px;
+}
+
+.close-div {
+  margin-left: auto;
+  margin-right: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 43px;
+}
+
+.modal-left {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.header-mood {
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+}
+
+.modal-date {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+
+  /* text */
+
+  color: #1e2022;
+}

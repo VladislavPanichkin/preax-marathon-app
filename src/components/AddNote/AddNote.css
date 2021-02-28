@@ -1,0 +1,50 @@
+.AddNote {
+  width: 1440px;
+  background: #fdfcf3;
+}
+
+.add-header {
+  height: 120px;
+}
+
+.header-relative {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.add-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.add-column {
+  width: 670px;
+}
+
+.add-title {
+  height: 60px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 12px;
+}
+
+.add-title-placeholder {
+  position: absolute;
+  width: 81px;
+  height: 21px;
+  left: 16px;
+  top: calc(50% - 21px / 2 + 0.5px);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  
+  color: #acacac;
+}

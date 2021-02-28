@@ -1,0 +1,64 @@
+.AddButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 34px;
+
+  position: absolute;
+  width: 166px;
+  height: 40px;
+  left: 1233px;
+  top: 46px;
+
+  background: linear-gradient(135deg, #61b15a 0%, #adce74 100%);
+  border-radius: 12px;
+
+  box-sizing: border-box;
+}
+
+.pen-box {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 15px;
+}
+
+.pen-img {
+  position: absolute;
+  left: 8.33%;
+  right: 4.29%;
+  top: 8.33%;
+  bottom: 4.37%;
+}
+
+.add-content {
+  position: static;
+  left: 43.98%;
+  right: 20.48%;
+  top: 20%;
+  bottom: 20%;
+
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+
+  color: #ffffff;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 15px;
+}

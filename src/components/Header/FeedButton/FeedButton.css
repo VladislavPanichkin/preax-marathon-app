@@ -1,0 +1,67 @@
+.FeedButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 34px;
+
+  position: absolute;
+  width: 167px;
+  height: 40px;
+  left: 1052px;
+  top: 46px;
+
+  background: #ffce89;
+  border-radius: 12px;
+
+  box-sizing: border-box;
+}
+
+.display-grid {
+  
+  width: 24px;
+  height: 24px;
+  left: 34px;
+  top: 8px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 15px;
+}
+
+.feed-img {
+  position: relative;
+  left: 12.5%;
+  right: 12.5%;
+  top: 12.5%;
+  bottom: 12.5%;
+}
+
+.feed-content {
+  /* Список */
+
+  position: static;
+  left: 43.71%;
+  right: 20.36%;
+  top: 20%;
+  bottom: 20%;
+
+  font-family: IBM Plex Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+
+  /* text */
+  color: #1e2022;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 15px;
+}
