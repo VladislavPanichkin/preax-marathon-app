@@ -29,7 +29,6 @@
   }
 
   .modal-descr {
-    font-family: Roboto;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -69,7 +68,6 @@
 
   .modal-descr {
     padding-top: 24px;
-    font-family: Roboto;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -93,6 +91,10 @@
   height: 24px;
 }
 
+.close-img {
+  cursor: pointer;
+}
+
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -103,7 +105,6 @@
 }
 
 .modal-left {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 48px;
@@ -117,7 +118,6 @@
 }
 
 .modal-date {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;

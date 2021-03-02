@@ -5,14 +5,14 @@ import Logo from './Logo/Logo'
 
 import './Header.css'
 
-const Header = () => {
+const Header = ({ displayAddNote }) => {
     return (
         <div className='Header'>
             <div className='header-relative'>
                 <Logo />
                 <Filter />
-                <FeedButton />
-                <AddButton />
+                <FeedButton displayAddNote={displayAddNote}/>
+                <AddButton displayAddNote={displayAddNote}/>
             </div>
         </div>
     )

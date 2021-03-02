@@ -1,6 +1,10 @@
 import './Note.css'
 
-const Note = ({ title, date, img, descr, status }) => {
+const Note = ({ title, date, img, descr, status, displayModal }) => {
+
+    const showModal = () => {
+        displayModal(true)
+    }
 
     const styleImg = {
         width: '100%',
@@ -18,7 +22,8 @@ const Note = ({ title, date, img, descr, status }) => {
     };
 
     return (
-        <div className='Note'>
+        <div className='Note'
+            onClick={showModal}>
             <div style={styleImg}>
                 <div className='circle-group'>
                     <div className='circle'>

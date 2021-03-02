@@ -45,28 +45,48 @@
 }
 
 .mood-select {
-  position: relative;
-  width: 100px;
+  border: none;
+  width: 20%;
   height: 60px;
+  background: #ffffff;
 }
 
-.mood-rectangle {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+.mood-select > img:hover {
+  cursor: pointer
+}
 
-  background: #ffffff;
-  border-radius: 12px;
+.mood-options {
+  height: 23vh;
+  padding-top: 2%;
+  overflow-y: scroll;
+  height: 19vh;
+  width: 3vw;
+  background: white;
+  border: 1px solid grey;
+}
+
+.mood-emoji:hover{
+  cursor: pointer;
 }
 
 .chevron-down {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  right: 16px;
-  top: calc(50% - 24px / 2);
+  border: none;
+  color: white;
+  appearance: none;
+  background-image: url('./chevron-down.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+.chevron-down::after {
+  content: "11";
+  height: 5px;
+  width: 5px;
+}
+
+.chevron-down:hover {
+  cursor: pointer;
 }
 
 .chevron-img {

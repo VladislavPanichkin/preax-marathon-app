@@ -1,12 +1,19 @@
 import './ModalContainer.css'
 import close from './close.svg'
 
-const ModalContainer = () => (
-    <div className='ModalContainer'>
+const ModalContainer = ({ displayModal }) => {
+
+    const hideModal = () => {
+        displayModal(false)
+    }
+
+    return <div className='ModalContainer'>
         <div className='modal'>
             <div className='close-group'>
                 <div className='close-div'>
-                    <img src={close} alt='close' className='close-img' />
+                    <img src={close} alt='close' 
+                        className='close-img' onClick={hideModal}
+                    />
                 </div>
 
             </div>
@@ -37,6 +44,6 @@ const ModalContainer = () => (
             </div>
         </div>
     </div>
-)
+}
 
 export default ModalContainer

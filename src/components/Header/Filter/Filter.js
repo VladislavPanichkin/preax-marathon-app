@@ -1,6 +1,5 @@
 import './Filter.css'
-import chevronDown from './chevron-down.svg'
-import smileMouthOpen from './smile-mouth-open.svg'
+import MoodFilter from '../../MoodFilter/MoodFilter'
 
 const Filter = () => {
 
@@ -14,16 +13,7 @@ const Filter = () => {
                     </div>
                     </div>
                 </div>
-                <div className='mood-select'>
-                    <div className='mood-rectangle'>
-                        <div className='chevron-down'>
-                            <img src={chevronDown} alt='chevron-down' className='chevron-img' />
-                        </div>
-                    </div>
-                    <div className='smile-mouth-open'>
-                        <img src={smileMouthOpen} alt='smile-mouth-open' />
-                    </div>  
-                </div>
+                <MoodFilter />
             </div>            
         </div>
     )

@@ -8,6 +8,10 @@
     box-sizing: border-box;
   }
 
+  .Note:hover {
+    cursor: pointer;
+  }
+
   .note-footer {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
@@ -81,7 +85,6 @@
 }
 
 .note-title {
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -90,7 +93,6 @@
 }
 
 .note-date {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
@@ -99,7 +101,6 @@
 }
 
 .note-descr {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;

@@ -1,43 +1,37 @@
-import Header from '../Header/Header'
-import Note from '../Note/Note'
-import ModalContainer from '../ModalContainer/ModalContainer'
-
-import './Feed.css'
-import { notesList } from '../../mockData'
-import AddNote from '../AddNote/AddNote'
+import { useState } from "react";
+import Header from "../Header/Header";
+import Notes from "../Notes/Notes";
+import ModalContainer from "../ModalContainer/ModalContainer";
+import AddNote from "../AddNote/AddNote";
+import "./Feed.css";
+import { notesList } from "../../mockData";
 
 const Feed = () => {
+  const [notes, setNotes] = useState(notesList);
 
-    const getNotes = () => notesList.map((note, index) => <Note
-        title={note.title}
-        date={note.date}
-        img={note.img}
-        descr={note.descr}
-        status={note.status}
-        key={index}
-    />)
+  const onNoteAdded = (newNote) => {
+    setNotes({ ...notesList, newNote });
+  };
+  const [isModalDisplayed, displayModal] = useState(false);
+  const [isAddNoteDisplayed, displayAddNote] = useState(true);
 
-    return (
-        <div>
-            <div className='Feed'>
-                <Header />
-                <div className='feed-wrapper'>
-                    <div className='feed-grid'>
-                        {getNotes()}
-                    </div>
-                </div>
-            </div>
-            <div>
-                Note
-                <ModalContainer />
-            </div>
-            <div>
-                Add Note
-                <AddNote />
-            </div>
-        </div>
-    )
+  return (
+    <div className="Feed">
+      {(isModalDisplayed || isAddNoteDisplayed) === false && (
+        <>
+          <Header displayAddNote={displayAddNote} />
+          <Notes displayModal={displayModal} notes={notes}/>
+        </>
+      )}
+      {isModalDisplayed && <ModalContainer displayModal={displayModal} />}
+      {isAddNoteDisplayed && (
+        <>
+          <Header displayAddNote={displayAddNote} displayModal={displayModal} />
+          <AddNote onNoteAdded={onNoteAdded} />
+        </>
+      )}
+    </div>
+  );
+};
 
-}
-
-export default Feed
+export default Feed;

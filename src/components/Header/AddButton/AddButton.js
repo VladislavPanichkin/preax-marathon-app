@@ -1,10 +1,14 @@
 import './AddButton.css'
 import pen from './pen.svg'
 
-const AddButton = () => {
+const AddButton = ({ displayAddNote }) => {
+
+    const showAddNote = () => {
+        displayAddNote(true);
+    }
 
     return (
-        <div className='AddButton'>            
+        <div className='AddButton' onClick={showAddNote}>            
             <div className='pen-box'>
                 <img src={pen} alt="pen" className='pen-img' />
             </div>
