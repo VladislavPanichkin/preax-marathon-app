@@ -20,13 +20,15 @@ const AddNote = ({ onNoteAdded }) => {
 
   const postDataChangeHandler = e => {
     if (e.target.tagName == "IMG") {
-      setPostData({ ...postData, 
-          ["img"]: `${e.target.src}`})
-    } else {    setPostData({ ...postData, [e.target.name]: e.target.value})  }
+      setPostData({
+        ...postData,
+        ["img"]: `${e.target.src}`
+      })
+    } else { setPostData({ ...postData, [e.target.name]: e.target.value }) }
   }
 
   const showGallery = () => {
-      toggleGallery(true)
+    toggleGallery(true)
   }
 
   const typeQuery = (event) => {
@@ -37,20 +39,21 @@ const AddNote = ({ onNoteAdded }) => {
     for (let key in postData) {
       if (postData[key] === "") {
         alert(`all fields must be filled, emoji and image must be chosen`)
-      } else { onNoteAdded(postData);
+      } else {
+        onNoteAdded(postData);
       }
     }
   }
 
-  console.log(notesList);
+  // console.log(notesList);
 
   return (
     <div className="AddNote">
       <section>
         <div className="add-meta">
-          <input placeholder="Название" className="styled-input" name="title" onChange={postDataChangeHandler}/>
+          <input placeholder="Название" className="styled-input" name="title" onChange={postDataChangeHandler} />
           <div className="meta-data__box">
-            <MoodFilter postDataChangeHandler={postDataChangeHandler}/>
+            <MoodFilter postDataChangeHandler={postDataChangeHandler} />
             <input
               name="date"
               className="styled-input"
@@ -72,13 +75,13 @@ const AddNote = ({ onNoteAdded }) => {
       </section>
       <section>
         <div className="add-note-search">
-          <input placeholder="Поиск" className="styled-input add-search" onChange={typeQuery}/>
+          <input placeholder="Поиск" className="styled-input add-search" onChange={typeQuery} />
           <button className="add-note-search__button" onClick={showGallery}>
           </button>
         </div>
-          {isGalleryDisplayed &&
-            <Gallery setPics={setPics} pics={pics} query={query}
-            postDataChangeHandler={postDataChangeHandler}/> }
+        {isGalleryDisplayed &&
+          <Gallery setPics={setPics} pics={pics} query={query}
+            postDataChangeHandler={postDataChangeHandler} />}
       </section>
     </div>
   );
