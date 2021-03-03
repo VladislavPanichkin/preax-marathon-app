@@ -1,7 +1,7 @@
 //import logo from './assets/logo.svg';
 
-import Feed from './components/Feed/Feed'
-import './App.css'
+import Feed from './components/Feed/Feed';
+import './App.css';
 
 function App() {
   return (

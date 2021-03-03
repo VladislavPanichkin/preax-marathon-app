@@ -25,7 +25,6 @@
     width: 500px;
     height: 750px;
     background-image: url(https://images.pexels.com/photos/5103756/pexels-photo-5103756.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
-    /* background-size:cover; */
   }
 
   .modal-descr {
@@ -33,9 +32,7 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
-
     width: 740px;
-
     color: #1e2022;
   }
 }
@@ -72,9 +69,6 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 19px;
-
-    /* text */
-
     color: #1e2022;
   }
 }
@@ -122,8 +116,5 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
-
-  /* text */
-
   color: #1e2022;
 }

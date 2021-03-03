@@ -5,12 +5,16 @@ import Logo from './Logo/Logo'
 
 import './Header.css'
 
-const Header = ({ displayAddNote }) => {
+const Header = ({ displayAddNote, emotion, onEmotion, title, onTitle  }) => {
     return (
         <div className='Header'>
             <div className='header-relative'>
                 <Logo />
-                <Filter />
+                <Filter
+                    emotion={emotion}
+                    onEmotion={onEmotion}
+                    title={title}
+                    onTitle={onTitle}/>
                 <FeedButton displayAddNote={displayAddNote}/>
                 <AddButton displayAddNote={displayAddNote}/>
             </div>

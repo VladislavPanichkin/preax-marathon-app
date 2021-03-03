@@ -17,7 +17,7 @@ const Gallery = ({ setPics, pics, query, postDataChangeHandler }) => {
         images = pics.map(pic => {
             return <figure key={pic.id} className={`gallery-item gallery-item-${pics.indexOf(pic) + 1}`}
                     >
-                <img src={pic.src.medium} alt="gallery image" className="gallery-img" onClick={chooseImg}/>
+                <img src={pic.src.medium} alt="gallery" className="gallery-img" onClick={chooseImg}/>
             </figure>
         })
     }
@@ -40,7 +40,7 @@ const Gallery = ({ setPics, pics, query, postDataChangeHandler }) => {
                 setPics(response.photos)
             })
             .catch((err) => { console.log(err); })
-    }, []);
+    }, [query, setPics]);
 
     return <div className="add-note-gallery-container">
         {isFetching && <div>Загрузка...</div>}

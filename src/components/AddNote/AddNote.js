@@ -2,7 +2,6 @@ import { useState } from "react";
 
 import MoodFilter from "../MoodFilter/MoodFilter";
 import Gallery from "./Gallery";
-import { notesList } from '../../mockData';
 import "./AddNote.css";
 
 const AddNote = ({ onNoteAdded }) => {

@@ -34,7 +34,6 @@
   height: 21px;
   left: 16px;
   top: calc(50% - 21px / 2 + 0.5px);
-
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
@@ -44,11 +43,28 @@
   color: #acacac;
 }
 
+.mood-selec-wraper {
+  position: relative;
+}
+
 .mood-select {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 16px 60px 16px 16px;
   border: none;
-  width: 20%;
-  height: 60px;
-  background: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.34317 7.75732L4.92896 9.17154L12 16.2426L19.0711 9.17157L17.6569 7.75735L12 13.4142L6.34317 7.75732Z' fill='black'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px top 50%,
+  0 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .mood-select > img:hover {
@@ -63,6 +79,15 @@
   width: 3vw;
   background: white;
   border: 1px solid grey;
+}
+
+.mood-select-icon {
+  position: absolute;
+  left: 16px;
+  top: 18px;
+  font-size: 24px;
+  color: #BDBDBD;
+  pointer-events: none;
 }
 
 .mood-emoji:hover{
@@ -103,6 +128,40 @@
   top: 20px;
   width: 20px;
   height: 20px;  
-
   transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.filter-input {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  margin-right: 14px;
+  margin-left: auto;
+  padding: 20px 16px 19px;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  flex: 1;
+  width: 100%;
+  max-width: 480px;
+}
+
+.filter-input::placeholder {
+  color: #ACACAC;
+}
+
+@media (max-width: 1439px) {
+  .filter-input {
+    margin-left: 0;
+    max-width: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .filter-input {
+    padding: 10px 16px 11px;
+    font-size: 16px;
+    line-height: 19px;
+  }
 }
