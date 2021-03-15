@@ -16,6 +16,6 @@ export const useFilters = () => {
 
   return {
     emotion, onEmotion,
-    title, onTitle,
+    title, onTitle
   }
 };

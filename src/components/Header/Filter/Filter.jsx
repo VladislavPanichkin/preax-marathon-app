@@ -4,15 +4,15 @@ import MoodFilter from '../../MoodFilter/MoodFilter'
 const Filter = ({ emotion, onEmotion, title, onTitle }) => {
 
     return (
-        <div className='Filter'>
-            <div className='filter-flex'>
+        <div className='filter'>
+            <div className='filter-container'>
                 <input
                     type="text"
                     value={title}
                     onChange={onTitle}
-                    className='filter-input'
+                    className='filter__input'
                     placeholder='Поиск'/>
-                <MoodFilter postDataChangeHandler={onEmotion} value={emotion}/>
+                <MoodFilter onEmotion={onEmotion} emotion={emotion}/>
             </div>            
         </div>
     )

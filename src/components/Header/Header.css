@@ -2,10 +2,11 @@
     position: fixed;
     left: 0; 
     top: 0;
-    width: 1440px;
+    /* width: 1440px; */
     height: 120px;
     background-color: #FDFCF3;
     z-index: 1;
+    width: 100%;
 }
 
 .header-relative{
@@ -14,4 +15,20 @@
     right: 0;
     top: 0;
     bottom: 0;    
+}
+
+@media (max-width: 1024px) {
+    .Header {
+        height: 200px;
+        position: initial;
+        /* height: 15% */
+    }
+}
+
+@media (min-width: 320px) and (max-width: 812px) {
+    .Header {
+        width: 100%;
+        padding: 0 4%;
+        height: 20vh;
+    }
 }

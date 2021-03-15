@@ -1,4 +1,4 @@
-.Filter {
+.filter {
   position: absolute;
   width: 594px;
   height: 60px;
@@ -6,7 +6,7 @@
   top: 36px;
 }
 
-.filter-flex {
+.filter-container {
   display: flex;
   justify-content: space-between;
 }
@@ -34,7 +34,7 @@
   height: 21px;
   left: 16px;
   top: calc(50% - 21px / 2 + 0.5px);
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -43,16 +43,17 @@
   color: #acacac;
 }
 
-.mood-selec-wraper {
+.mood-select-wrapper {
   position: relative;
+  margin-right: 2%;
 }
 
-.mood-select {
+.mood__select {
   background: #FFFFFF;
   border-radius: 12px;
   padding: 16px 60px 16px 16px;
   border: none;
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -67,7 +68,7 @@
   appearance: none;
 }
 
-.mood-select > img:hover {
+.mood__select > img:hover {
   cursor: pointer
 }
 
@@ -81,7 +82,7 @@
   border: 1px solid grey;
 }
 
-.mood-select-icon {
+.mood-select__icon {
   position: absolute;
   left: 16px;
   top: 18px;
@@ -131,7 +132,7 @@
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.filter-input {
+.filter__input {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 18px;
@@ -147,21 +148,37 @@
   max-width: 480px;
 }
 
-.filter-input::placeholder {
+.filter__input::placeholder {
   color: #ACACAC;
 }
 
 @media (max-width: 1439px) {
-  .filter-input {
+  .filter__input {
     margin-left: 0;
     max-width: none;
   }
 }
 
-@media (max-width: 767px) {
-  .filter-input {
+@media (max-width: 1024px) {
+  .filter__input {
     padding: 10px 16px 11px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
+  }
+
+  .filter {
+    width: 60%;
+    left: 6%;
+    top: 116px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 812px) {
+  .filter {
+    width: 90%;
+  }
+
+  .filter__input {
+    margin: 0 4% 0 0;
   }
 }

@@ -2,23 +2,25 @@ import { useState, useEffect } from 'react'
 
 import "./Gallery.css"
 
-const Gallery = ({ setPics, pics, query, postDataChangeHandler }) => {
+const Gallery = ({ setPics, pics, query, postDataChangeHandler, selectedImage, setImage }) => {
 
     const [isFetching, setFetching] = useState(false);
 
     const chooseImg = e => {
-        postDataChangeHandler(e)
-        e.target.classList.add("chosenImg")
+        setImage(e.target.src);
+        postDataChangeHandler(e);
     }
 
     let images = []
 
     if (pics) {
         images = pics.map(pic => {
-            return <figure key={pic.id} className={`gallery-item gallery-item-${pics.indexOf(pic) + 1}`}
-                    >
-                <img src={pic.src.medium} alt="gallery" className="gallery-img" onClick={chooseImg}/>
-            </figure>
+            return <div key={pic.id} className={`gallery-item gallery-item-${pics.indexOf(pic) + 1}`}>
+                    {pic.src.medium === selectedImage 
+                        ? <img src={pic.src.medium} alt="gallery" className="gallery-img chosenImg" onClick={chooseImg}/>
+                        : <img src={pic.src.medium} alt="gallery" className="gallery-img" onClick={chooseImg}/>
+                    }
+                    </div>
         })
     }
 

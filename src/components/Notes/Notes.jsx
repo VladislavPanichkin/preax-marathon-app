@@ -1,6 +1,6 @@
 import Note from "./Note/Note"
 
-const Notes = ({ displayModal, notes }) => {
+const Notes = ({ notes, setModal }) => {
 
     return <div className="feed-wrapper">
         <div className="feed-grid">
@@ -12,7 +12,8 @@ const Notes = ({ displayModal, notes }) => {
                     descr={note.descr}
                     status={note.status}
                     key={index}
-                    displayModal={displayModal}
+                    setModal={setModal}
+                    id={note.id}
                 />
             })}
         </div>

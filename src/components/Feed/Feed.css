@@ -1,6 +1,11 @@
+.Feed {
+  overflow: hidden;
+}
+
 @media (max-width: 12450px) {
   .Feed {
-    width: 1440px;
+    /* width: 1440px; */
+    width: 100%;
     background-color: #fdfcf3;
     position: relative;
     left: 0;
@@ -17,6 +22,7 @@
   }
 
   .feed-grid {
+    grid-gap: 2% 2%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -35,7 +41,7 @@
   }
 
   .feed-wrapper {
-    padding-top: 200px;    
+    padding-top: 0;    
     padding-left: 80px;
     padding-right: 80px;
   }
@@ -44,5 +50,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
 
+@media (min-width: 320px) and (max-width: 812px) {
+
+  .Feed {
+    width: 100%;
+  }
+
+  .feed-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feed-wrapper {
+    padding: 3em 4% 0 4%;
+  }
 }

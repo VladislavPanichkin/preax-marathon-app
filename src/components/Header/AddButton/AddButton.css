@@ -61,3 +61,31 @@
   flex-grow: 0;
   margin: 0px 15px;
 }
+
+@media (max-width: 1024px) {
+  .AddButton {
+    left: 50%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 812px) {
+  .AddButton {
+    left: auto;
+    top: auto;
+    /* height: 5vh; */
+    height: 30px;
+    width: 38%;
+    z-index: 1;
+    bottom: 3%;
+    position: fixed;
+    right: 9%;
+  }
+
+  .add-content {
+    display: none
+  }
+
+  .pen-img {
+    width: 18px;
+  }
+}

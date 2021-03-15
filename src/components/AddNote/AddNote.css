@@ -21,6 +21,8 @@
   border-radius: 12px;
   border: none;
   font-weight: 300;
+  margin-bottom: 1%;
+  font-family: Roboto, sans-serif
 }
 
 .add-note-meta > input {
@@ -39,7 +41,6 @@
 
 .meta-data__box {
   display: flex;
-  align-items: center;
   margin-bottom: 1%;
 }
 
@@ -47,7 +48,6 @@
   width: 30%;
   height: 60px;
   width: 30%;
-  margin-left: 2%;
 }
 
 .add-create-button {
@@ -87,4 +87,75 @@
   border-radius: 12px;
   width: 60px;
   height: 60px;
+}
+
+@media (max-width: 1024px) {
+  .AddNote {
+    flex-direction: column;
+    padding: 0 5%;
+  }
+
+  .add-create-button {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+  }
+
+  .add-meta {
+    display: flex;
+  }
+
+  .mood-select-wrapper {
+    margin-right: 5%;
+  }
+
+  .meta-data__box > input {
+    margin-right: 2%;
+    width: 50%
+  }
+}
+
+@media (min-width: 320px) and (max-width: 812px) {
+
+  section:nth-child(1) {
+    order: 2;
+    margin-bottom: 20%;
+  }
+
+  section:nth-child(2) {
+    flex-basis: auto;
+  }
+
+  .add-note-gallery-container {
+    overflow: scroll;
+    grid-template-rows: 1fr;
+    padding: 10% 0;
+    height: 50vh;
+  }
+
+  .add-meta {
+    flex-direction: column;
+  }
+
+  .mood-select-wrapper {
+    order: 1;
+    margin: 0;
+  }
+
+  .meta-data__box > input {
+    width: 60%;
+  }
+
+  .add-textarea {
+    height: 30vh;
+  }
+
+  .add-create-button {
+    position: static;
+    width: 100%
+  }
+
+  .gallery-img {
+    max-width: 100%;
+  }
 }
