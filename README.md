@@ -1,4 +1,1 @@
-**Задание № 3**: 
-
-Самому ничего реализовать не удалось.
-Многое было уже сделано.
+An app created during a 4-day marathon organized by PRE.AX.
